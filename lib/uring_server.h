@@ -4,6 +4,7 @@
 #include <liburing.h>
 
 #include "uring_channel.h"
+
 const int QUEUE_SIZE{256};
 
 class UringServer {
@@ -29,5 +30,4 @@ private:
     struct io_uring _ring{};
 };
 
-
-#endif //LINUX_IO_EXAMPLES_URING_SERVER_H
+#endif //URING_SERVER_H
